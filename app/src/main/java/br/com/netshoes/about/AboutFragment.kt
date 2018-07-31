@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.toolbar.view.*
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
-class AboutFragment: HelpFragment(){
+class AboutFragment: HelpFragment(), AboutMVP.View{
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val view = inflater!!.inflate(R.layout.about, container, false)

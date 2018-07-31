@@ -6,3 +6,9 @@ package br.com.netshoes.favorites
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
+
+interface FavoritesMVP{
+    interface View
+    interface Presenter
+    interface Interactor
+}

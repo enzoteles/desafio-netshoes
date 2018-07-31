@@ -1,4 +1,4 @@
-package br.com.netshoes.home
+package br.com.netshoes.content
 
 /**
  * Created by Enzo Teles on 30,July,2018
@@ -6,9 +6,10 @@ package br.com.netshoes.home
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
-interface HomeMVP{
 
-    interface View
-    interface Presenter
-    interface Interactor
+interface ContentMVP{
+    interface View {
+        fun initInjection()
+        fun initView()
+    }
 }

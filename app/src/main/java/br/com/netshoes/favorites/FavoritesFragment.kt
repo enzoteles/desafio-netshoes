@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.toolbar.view.*
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
-class FavoritesFragment: HelpFragment(){
+class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val view = inflater!!.inflate(R.layout.favorites, container, false)
