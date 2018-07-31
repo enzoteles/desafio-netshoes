@@ -1,6 +1,6 @@
-package br.com.netshoes.content
+package br.com.netshoes.content.di
 
-import br.com.netshoes.main.MainActivity
+import br.com.netshoes.content.ContentFragment
 import dagger.Component
 
 /**

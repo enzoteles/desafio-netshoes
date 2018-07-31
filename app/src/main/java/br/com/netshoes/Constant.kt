@@ -13,5 +13,6 @@ import android.support.v7.widget.Toolbar
 object Constant{
 
     var toolbar: Toolbar?= null
+    val URL_DOMAIN = "https://api.github.com/"
 
 }

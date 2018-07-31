@@ -10,6 +10,8 @@ import br.com.enzoteles.quickhelp.security.HelpSecurity
 import br.com.netshoes.Constant
 import br.com.netshoes.R
 import br.com.netshoes.about.AboutMVP
+import br.com.netshoes.content.di.ContentModule
+import br.com.netshoes.content.di.DaggerContentComponent
 import br.com.netshoes.favorites.FavoritesMVP
 import br.com.netshoes.home.HomeMVP
 import kotlinx.android.synthetic.main.content.*
