@@ -1,9 +1,10 @@
 package br.com.netshoes
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import br.com.enzoteles.quickhelp.fragment.HelpManagerFragment
+import br.com.enzoteles.quickhelp.security.HelpSecurity
+import br.com.netshoes.content.ContentFragment
 
 /**
  * Created by Enzo Teles on 30,July,2018
@@ -12,9 +13,18 @@ import kotlinx.android.synthetic.main.activity_main.*
  * Software Developer Sr.
  */
 class MainActivity : AppCompatActivity() {
+    lateinit var content: ContentFragment
+    lateinit var manager: HelpManagerFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        manager = HelpManagerFragment(this)
+        HelpSecurity.manager = manager
+        content = ContentFragment()
+        manager!!.addFragment(R.id.content, content, "content", false)
+
     }
+
 }
