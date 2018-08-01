@@ -75,6 +75,9 @@ class ContentFragment : HelpFragment(), ContentMVP.View {
     override fun initView() {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         HelpSecurity.manager!!.addFragment(R.id.options, home as HelpFragment, "home", false)
+        tb_im_upload.setOnClickListener {
+            activity.finish()
+        }
     }
 
 }
