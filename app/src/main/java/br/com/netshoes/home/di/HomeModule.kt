@@ -1,5 +1,7 @@
 package br.com.netshoes.home.di
 
+import br.com.netshoes.details.DetailFragment
+import br.com.netshoes.details.DetailMVP
 import br.com.netshoes.home.HomeInteractor
 import br.com.netshoes.home.HomeMVP
 import br.com.netshoes.home.HomePresenter
@@ -25,4 +27,11 @@ class HomeModule(var view: HomeMVP.View){
     fun provideHomeInteractor(): HomeMVP.Interactor{
         return HomeInteractor(HomePresenter(view))
     }
+
+    @Provides
+    fun provideDetailFragment(): DetailMVP.View{
+        return DetailFragment()
+    }
+
+
 }

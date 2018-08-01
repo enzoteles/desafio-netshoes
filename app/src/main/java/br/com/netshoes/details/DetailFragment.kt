@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import br.com.enzoteles.quickhelp.fragment.HelpFragment
 import br.com.netshoes.Constant
 import br.com.netshoes.R
+import br.com.netshoes.webservice.allgists.ResponseAllGists
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.detail.*
 
 /**
  * Created by Enzo Teles on 30,July,2018
@@ -25,6 +28,7 @@ class DetailFragment : HelpFragment(), DetailMVP.View{
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initView()
     }
 
     override fun initInjection() {
@@ -32,7 +36,13 @@ class DetailFragment : HelpFragment(), DetailMVP.View{
     }
 
     override fun initView() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val args = arguments
+        val gists = args.getSerializable("gists") as ResponseAllGists
+
+        dt_tv_name_author.setText("${gists.owner!!.login}")
+        dt_tv_gists_language.setText("${gists!!.nodeId}")
+        dt_tv_gists_title.setText("${gists.url}")
+        Picasso.get().load("${gists!!.owner!!.avatarUrl}").into(dt_im_author)
     }
 
     override fun initData() {

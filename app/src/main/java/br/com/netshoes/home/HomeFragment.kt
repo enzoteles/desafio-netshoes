@@ -11,6 +11,7 @@ import br.com.enzoteles.quickhelp.security.HelpSecurity
 import br.com.netshoes.Constant
 import br.com.netshoes.R
 import br.com.netshoes.details.DetailFragment
+import br.com.netshoes.details.DetailMVP
 import br.com.netshoes.home.adapter.HomeAdapter
 import br.com.netshoes.home.di.DaggerHomeComponent
 import br.com.netshoes.home.di.HomeModule
@@ -32,6 +33,8 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
 
     @Inject
     lateinit var presenter: HomeMVP.Presenter
+    @Inject
+    lateinit var detail: DetailMVP.View
     lateinit var listGists: MutableList<ResponseAllGists>
     lateinit var adapter: HomeAdapter
     lateinit var layoutManager: LinearLayoutManager
@@ -87,8 +90,10 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
         hm_rv_gists.layoutManager = layoutManager
     }
 
-    override fun detailGistis(it: ResponseAllGists?) {
-        val detail: DetailFragment = DetailFragment()
-        HelpSecurity.manager!!.replaceFragment(R.id.options, detail, "detail", true);
+    override fun detailGistis(gists: ResponseAllGists?) {
+        val args = Bundle()
+        args.putSerializable("gists", gists)
+        (detail as HelpFragment).arguments = args
+        HelpSecurity.manager!!.replaceFragment(R.id.options, detail as HelpFragment, "detail", true);
     }
 }

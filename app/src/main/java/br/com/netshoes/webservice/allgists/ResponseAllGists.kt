@@ -2,6 +2,7 @@ package br.com.netshoes.webservice.allgists
 
 import javax.annotation.Generated
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 @Generated("com.robohorse.robopojogenerator")
 data class ResponseAllGists(
@@ -59,4 +60,4 @@ data class ResponseAllGists(
 
 	@field:SerializedName("node_id")
 	val nodeId: String? = null
-)
+): Serializable
