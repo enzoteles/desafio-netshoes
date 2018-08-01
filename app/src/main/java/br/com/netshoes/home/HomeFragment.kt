@@ -1,8 +1,8 @@
 package br.com.netshoes.home
 
-import android.arch.lifecycle.LifecycleOwner
 import android.arch.lifecycle.Observer
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,12 +10,12 @@ import br.com.enzoteles.quickhelp.fragment.HelpFragment
 import br.com.enzoteles.quickhelp.log.HelpLog
 import br.com.netshoes.Constant
 import br.com.netshoes.R
-import br.com.netshoes.content.di.ContentModule
-import br.com.netshoes.content.di.DaggerContentComponent
+import br.com.netshoes.home.adapter.HomeAdapter
 import br.com.netshoes.home.di.DaggerHomeComponent
 import br.com.netshoes.home.di.HomeModule
 import br.com.netshoes.main.MainActivity
 import br.com.netshoes.webservice.allgists.ResponseAllGists
+import kotlinx.android.synthetic.main.home.*
 import kotlinx.android.synthetic.main.toolbar.view.*
 import javax.inject.Inject
 
@@ -28,8 +28,12 @@ import javax.inject.Inject
 
 class HomeFragment: HelpFragment(), HomeMVP.View{
 
+
     @Inject
     lateinit var presenter: HomeMVP.Presenter
+    lateinit var listGists: MutableList<ResponseAllGists>
+    lateinit var adapter: HomeAdapter
+    lateinit var layoutManager: LinearLayoutManager
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val view = inflater!!.inflate(R.layout.home, container, false)
@@ -58,12 +62,27 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
 
 
     override fun initData() {
+
         presenter.getAllGists().observe(activity as MainActivity, object : Observer<List<ResponseAllGists>>{
             override fun onChanged(response: List<ResponseAllGists>?) {
-                HelpLog.info("======> ${response!![0]!!.url}")
+                setrecyclerview(response)
             }
 
         })
 
+    }
+
+    override fun setrecyclerview(gits: List<ResponseAllGists>?) {
+        listGists = arrayListOf()
+
+        gits!!.forEach {
+            it-> listGists.add(it)
+            HelpLog.info("========>  ${it.owner!!.avatarUrl}")
+        }
+
+        adapter = HomeAdapter(listGists, activity.baseContext)
+        hm_rv_gists.adapter = adapter
+        layoutManager = LinearLayoutManager(activity.baseContext, LinearLayoutManager.VERTICAL, false)
+        hm_rv_gists.layoutManager = layoutManager
     }
 }

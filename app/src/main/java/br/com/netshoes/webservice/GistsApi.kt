@@ -1,6 +1,5 @@
 package br.com.netshoes.webservice
 
-import br.com.netshoes.webservice.allgists.ResponseAllGists
 import br.com.netshoes.webservice.gists.ResponseGists
 import io.reactivex.Observable
 

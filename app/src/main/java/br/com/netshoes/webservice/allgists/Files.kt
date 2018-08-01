@@ -1,5 +1,11 @@
 package br.com.netshoes.webservice.allgists
 
+import javax.annotation.Generated
+import com.google.gson.annotations.SerializedName
+
+@Generated("com.robohorse.robopojogenerator")
 data class Files(
-	val functionForCheckSomethinExampleInDebug: FunctionForCheckSomethinExampleInDebug? = null
+
+	@field:SerializedName("gistfile1.txt")
+	val gistfile1Txt: Gistfile1Txt? = null
 )

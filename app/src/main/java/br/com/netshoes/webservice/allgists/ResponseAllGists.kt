@@ -1,25 +1,62 @@
 package br.com.netshoes.webservice.allgists
 
-import br.com.netshoes.webservice.allgists.Files
-import br.com.netshoes.webservice.allgists.Owner
+import javax.annotation.Generated
+import com.google.gson.annotations.SerializedName
 
+@Generated("com.robohorse.robopojogenerator")
 data class ResponseAllGists(
-		val owner: Owner? = null,
-		val commitsUrl: String? = null,
-		val comments: Int? = null,
-		val forksUrl: String? = null,
-		val gitPushUrl: String? = null,
-		val createdAt: String? = null,
-		val description: String? = null,
-		val truncated: Boolean? = null,
-		val url: String? = null,
-		val jsonMemberPublic: Boolean? = null,
-		val updatedAt: String? = null,
-		val htmlUrl: String? = null,
-		val gitPullUrl: String? = null,
-		val commentsUrl: String? = null,
-		val files: Files? = null,
-		val id: String? = null,
-		val user: Any? = null,
-		val nodeId: String? = null
+
+	@field:SerializedName("owner")
+	val owner: Owner? = null,
+
+	@field:SerializedName("commits_url")
+	val commitsUrl: String? = null,
+
+	@field:SerializedName("comments")
+	val comments: Int? = null,
+
+	@field:SerializedName("forks_url")
+	val forksUrl: String? = null,
+
+	@field:SerializedName("git_push_url")
+	val gitPushUrl: String? = null,
+
+	@field:SerializedName("created_at")
+	val createdAt: String? = null,
+
+	@field:SerializedName("description")
+	val description: String? = null,
+
+	@field:SerializedName("truncated")
+	val truncated: Boolean? = null,
+
+	@field:SerializedName("url")
+	val url: String? = null,
+
+	@field:SerializedName("public")
+	val jsonMemberPublic: Boolean? = null,
+
+	@field:SerializedName("updated_at")
+	val updatedAt: String? = null,
+
+	@field:SerializedName("html_url")
+	val htmlUrl: String? = null,
+
+	@field:SerializedName("git_pull_url")
+	val gitPullUrl: String? = null,
+
+	@field:SerializedName("comments_url")
+	val commentsUrl: String? = null,
+
+	@field:SerializedName("files")
+	val files: Files? = null,
+
+	@field:SerializedName("id")
+	val id: String? = null,
+
+	@field:SerializedName("user")
+	val user: Any? = null,
+
+	@field:SerializedName("node_id")
+	val nodeId: String? = null
 )
