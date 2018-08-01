@@ -26,7 +26,7 @@ class HomeInteractor(val callback: HomeMVP.Presenter): HomeMVP.Interactor{
                 ?.subscribe ({ response ->
                     data?.value = response
                 }, { e ->
-                    HelpLog.error("${e.message}")
+                    callback.error(e.message)
                 })
         return data!!
     }

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import br.com.enzoteles.quickhelp.fragment.HelpFragment
 import br.com.enzoteles.quickhelp.fragment.HelpManagerFragment
 import br.com.enzoteles.quickhelp.security.HelpSecurity
+import br.com.netshoes.Constant
 import br.com.netshoes.R
 import br.com.netshoes.content.ContentMVP
 import br.com.netshoes.main.di.DaggerMainComponent
@@ -41,6 +42,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun initView(){
+        Constant.activity = this
+        Constant.context = baseContext
+
         HelpSecurity.manager = manager
         manager!!.addFragment(R.id.content, content as HelpFragment, "content", false)
     }

@@ -20,6 +20,7 @@ interface HomeMVP{
     interface Presenter{
         fun getAllGists(): MutableLiveData<List<ResponseAllGists>>
         fun initInteractor()
+        fun error(message: String?)
     }
     interface Interactor{
         fun getAllGists() : MutableLiveData<List<ResponseAllGists>>
