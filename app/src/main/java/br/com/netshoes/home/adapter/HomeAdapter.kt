@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
-class HomeAdapter (val listGists: List<ResponseAllGists?>?, val context: Context) : RecyclerView.Adapter<HomeAdapter.ViewHoder>() {
+class HomeAdapter(val listGists: List<ResponseAllGists?>?, val context: Context) : RecyclerView.Adapter<HomeAdapter.ViewHoder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHoder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_list_gists, parent, false)
@@ -33,9 +33,7 @@ class HomeAdapter (val listGists: List<ResponseAllGists?>?, val context: Context
         holder?.let {
 
             it.authorName.setText("${gists!!.owner!!.login}")
-            it.gistsTitle.setText("${gists!!.files!!.gistfile1Txt!!.filename}")
-            it.gistsLanguange.setText("${gists!!.files!!.gistfile1Txt!!.language}")
-
+            //it.gistsLanguange.setText("${gists!!.files!!.gistfile1Txt!!.language}")
             Picasso.get().load("${gists!!.owner!!.avatarUrl}").into(it.imgAuthor);
 
         }
@@ -43,10 +41,9 @@ class HomeAdapter (val listGists: List<ResponseAllGists?>?, val context: Context
     }
 
 
-
-    class ViewHoder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    class ViewHoder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var authorName = itemView.hm_author_name
-        var gistsTitle = itemView.hm_gists_name
+        //var gistsTitle = itemView.hm_gists_name
         var gistsLanguange = itemView.hm_gists_languange
         var imgAuthor = itemView.hm_author_avatar
     }

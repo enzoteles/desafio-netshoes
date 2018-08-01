@@ -15,7 +15,7 @@ import br.com.netshoes.main.MainActivity
 object Constant{
 
     var toolbar: Toolbar?= null
-    val URL_DOMAIN = "https://api.github.com/"
+    val URL_DOMAIN = "https://api.github.com"
     var activity: MainActivity?= null
     var context: Context?= null
     var HTTP404 = "HTTP 404 Not Found"
