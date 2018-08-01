@@ -1,5 +1,7 @@
 package br.com.netshoes.webservice.allgists
 
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
 import javax.annotation.Generated
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
@@ -59,5 +61,8 @@ data class ResponseAllGists(
 	val user: Any? = null,
 
 	@field:SerializedName("node_id")
-	val nodeId: String? = null
+	val nodeId: String? = null,
+
+	val isFavorites: Boolean? = null
+
 ): Serializable

@@ -1,5 +1,6 @@
 package br.com.netshoes.webservice.allgists
 
+import android.arch.persistence.room.Entity
 import javax.annotation.Generated
 import com.google.gson.annotations.SerializedName
 

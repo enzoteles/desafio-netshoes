@@ -16,7 +16,9 @@ import com.google.android.gms.common.GooglePlayServicesUtil
 import com.google.android.gms.common.GooglePlayServicesRepairableException
 import com.google.android.gms.security.ProviderInstaller
 import android.app.Activity
+import android.arch.persistence.room.Room
 import android.util.Log
+import br.com.netshoes.webservice.allgists.AppDataBase
 
 
 /**
@@ -39,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         updateAndroidSecurityProvider(this)
         initInjection()
         initView()
+        initData()
 
     }
 
@@ -57,7 +60,17 @@ class MainActivity : AppCompatActivity() {
         manager!!.addFragment(R.id.content, content as HelpFragment, "content", false)
     }
 
-    private fun updateAndroidSecurityProvider(callingActivity: Activity) {
+    fun initData() {
+
+        Constant.database = Room.databaseBuilder(
+                this,
+                AppDataBase::class.java,
+                "netshoes-database")
+                .allowMainThreadQueries()
+                .build()
+    }
+
+    fun updateAndroidSecurityProvider(callingActivity: Activity) {
         try {
             ProviderInstaller.installIfNeeded(this)
         } catch (e: GooglePlayServicesRepairableException) {

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.com.enzoteles.quickhelp.fragment.HelpFragment
+import br.com.enzoteles.quickhelp.log.HelpLog
 import br.com.enzoteles.quickhelp.security.HelpSecurity
 import br.com.netshoes.Constant
 import br.com.netshoes.R
@@ -30,7 +31,6 @@ import javax.inject.Inject
 
 class HomeFragment: HelpFragment(), HomeMVP.View{
 
-
     @Inject
     lateinit var presenter: HomeMVP.Presenter
     @Inject
@@ -49,6 +49,7 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
         initInjection()
         initView()
         initData()
+        HelpLog.info("LIST ===>> ${Constant.database!!.gistsDao().allGists().size}")
     }
 
     override fun initInjection() {
