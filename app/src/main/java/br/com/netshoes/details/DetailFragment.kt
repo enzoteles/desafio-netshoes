@@ -10,6 +10,7 @@ import br.com.netshoes.R
 import br.com.netshoes.webservice.allgists.ResponseAllGists
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.detail.*
+import kotlinx.android.synthetic.main.toolbar.view.*
 
 /**
  * Created by Enzo Teles on 30,July,2018
@@ -36,6 +37,7 @@ class DetailFragment : HelpFragment(), DetailMVP.View{
     }
 
     override fun initView() {
+        Constant.toolbar!!.ct_tb_tv_title.setText("Detail")
         val args = arguments
         val gists = args.getSerializable("gists") as ResponseAllGists
 

@@ -46,7 +46,6 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Constant.toolbar!!.ct_tb_tv_title.setText("Home")
         initInjection()
         initView()
         initData()
@@ -61,8 +60,10 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
     }
 
     override fun initView() {
+        Constant.toolbar!!.ct_tb_tv_title.setText("Home")
         Constant.tag_frag = "HOME"
         presenter.initInteractor()
+        avi.show()
     }
 
 
@@ -78,6 +79,8 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
     }
 
     override fun setrecyclerview(gits: List<ResponseAllGists>?) {
+        avi.hide()
+        hm_rv_gists.visibility = View.VISIBLE
         listGists = arrayListOf()
 
         gits!!.forEach {
