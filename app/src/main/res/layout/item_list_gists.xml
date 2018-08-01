@@ -45,6 +45,7 @@
                 android:id="@+id/hm_author_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:singleLine="true"
                 android:layout_marginTop="5dp"
                 android:text="Texto 1" />
 
@@ -52,12 +53,14 @@
                 android:id="@+id/hm_gists_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:singleLine="true"
                 android:layout_marginTop="10dp"
                 android:text="Texto 2" />
 
             <TextView
                 android:id="@+id/hm_gists_languange"
                 android:layout_width="match_parent"
+                android:singleLine="true"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Texto 3" />

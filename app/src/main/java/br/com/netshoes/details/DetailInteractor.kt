@@ -6,3 +6,8 @@ package br.com.netshoes.details
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
+
+class DetailInteractor: DetailMVP.Interactor{
+
+
+}

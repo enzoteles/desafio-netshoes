@@ -16,6 +16,7 @@ interface HomeMVP{
         fun initData()
         fun initInjection()
         fun setrecyclerview(listGists: List<ResponseAllGists>?)
+        fun detailGistis(it: ResponseAllGists?)
     }
 
     interface Presenter{

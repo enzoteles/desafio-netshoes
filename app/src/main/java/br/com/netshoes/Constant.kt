@@ -20,5 +20,6 @@ object Constant{
     var context: Context?= null
     var HTTP404 = "HTTP 404 Not Found"
     var NOADDRESS = "Unable to resolve host \"api.github.com\": No address associated with hostname"
+    var tag_frag:String?= null
 
 }

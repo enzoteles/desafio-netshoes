@@ -6,3 +6,12 @@ package br.com.netshoes.details
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
+interface DetailMVP{
+    interface View{
+        fun initInjection()
+        fun initView()
+        fun initData()
+    }
+    interface Presenter
+    interface Interactor
+}

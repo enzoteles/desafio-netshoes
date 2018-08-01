@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.com.netshoes.R
+import br.com.netshoes.home.HomeMVP
 import kotlinx.android.synthetic.main.item_list_gists.view.*
 import br.com.netshoes.webservice.allgists.ResponseAllGists
 import com.squareup.picasso.Picasso
@@ -16,7 +17,7 @@ import com.squareup.picasso.Picasso
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
-class HomeAdapter(val listGists: List<ResponseAllGists?>?, val context: Context) : RecyclerView.Adapter<HomeAdapter.ViewHoder>() {
+class HomeAdapter(val listGists: List<ResponseAllGists?>?, val context: Context, val view: HomeMVP.View) : RecyclerView.Adapter<HomeAdapter.ViewHoder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHoder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_list_gists, parent, false)
@@ -33,8 +34,12 @@ class HomeAdapter(val listGists: List<ResponseAllGists?>?, val context: Context)
         holder?.let {
 
             it.authorName.setText("${gists!!.owner!!.login}")
-            //it.gistsLanguange.setText("${gists!!.files!!.gistfile1Txt!!.language}")
+            it.gistsLanguange.setText("${gists!!.nodeId}")
+            it.gistsTitle.setText("${gists.url}")
             Picasso.get().load("${gists!!.owner!!.avatarUrl}").into(it.imgAuthor);
+            it.itemView.setOnClickListener {
+                view.detailGistis(gists)
+            }
 
         }
 
@@ -43,7 +48,7 @@ class HomeAdapter(val listGists: List<ResponseAllGists?>?, val context: Context)
 
     class ViewHoder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var authorName = itemView.hm_author_name
-        //var gistsTitle = itemView.hm_gists_name
+        var gistsTitle = itemView.hm_gists_name
         var gistsLanguange = itemView.hm_gists_languange
         var imgAuthor = itemView.hm_author_avatar
     }

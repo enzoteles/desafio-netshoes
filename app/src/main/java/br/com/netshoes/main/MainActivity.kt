@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        Constant.tag_frag = null
         updateAndroidSecurityProvider(this)
         initInjection()
         initView()
@@ -71,6 +71,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
+
+        if(Constant.tag_frag.equals("DETAIL")){
+            super.onBackPressed()
+        }
         //super.onBackPressed()
     }
 }
