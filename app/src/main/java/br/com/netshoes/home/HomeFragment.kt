@@ -49,7 +49,6 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
         initInjection()
         initView()
         initData()
-        HelpLog.info("LIST ===>> ${Constant.database!!.gistsDao().allGists().size}")
     }
 
     override fun initInjection() {
