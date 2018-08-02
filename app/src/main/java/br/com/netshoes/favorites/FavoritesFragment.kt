@@ -45,7 +45,6 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
         super.onViewCreated(view, savedInstanceState)
         Constant.toolbar!!.ct_tb_tv_title.setText("Favorites")
         initInjection()
-        initView()
         initData()
 
     }
@@ -56,10 +55,6 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
                 .build()
         favoritesComponent.inject(this)
         presenter.initInteractor()
-    }
-
-    override fun initView() {
-        HelpLog.info("Passando por aqui...")
     }
 
     override fun initData() {

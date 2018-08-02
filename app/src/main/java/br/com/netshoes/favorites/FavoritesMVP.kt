@@ -14,7 +14,6 @@ import br.com.netshoes.webservice.allgists.ResponseAllGistsPO
 interface FavoritesMVP{
     interface View {
         fun initInjection()
-        fun initView()
         fun initData()
         fun setrecyclerview(listGists: List<ResponseAllGistsPO>?)
         fun detailGistis(gists: ResponseAllGistsPO?)
