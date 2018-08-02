@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Netshoes Two</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_about">About</string>
+    <string name="title_list_favorites">No tienes ningún gists\n en la lista de favoritos.</string>
+    <string name="txt_about">La aplicación de software, o simplemente aplicación o aplicación, es un programa de ordenador que tiene como objetivo ayudar a su usuario a desempeñar una tarea específica, en general vinculada al procesamiento de datos.</string>
+</resources>

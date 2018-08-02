@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Netshoes Two</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_about">About</string>
+    <string name="title_list_favorites">You do not have any gists\n in the favorites list.</string>
+
+    <string name="txt_about">Software application, or simply application or application, is a computer program that aims to help its user to perform a specific task, usually linked to data processing.</string>
+</resources>
