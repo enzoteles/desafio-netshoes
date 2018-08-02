@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
     tools:context=".main.MainActivity">
 
@@ -38,11 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ab_tv_title"
         app:layout_constraintVertical_bias="0.862"
-        app:srcCompat="@android:drawable/btn_dialog" />
-    "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:srcCompat="@drawable/logo_about" />
+
 
 </android.support.constraint.ConstraintLayout>

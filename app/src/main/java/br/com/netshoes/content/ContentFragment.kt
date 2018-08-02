@@ -1,6 +1,7 @@
 package br.com.netshoes.content
 
 import android.os.Bundle
+import android.os.Handler
 import android.support.design.widget.BottomNavigationView
 import android.view.LayoutInflater
 import android.view.View
@@ -73,6 +74,13 @@ class ContentFragment : HelpFragment(), ContentMVP.View {
     }
 
     override fun initView() {
+
+        Handler().postDelayed({
+            ll_splash.visibility = View.GONE
+            ll_content.visibility = View.VISIBLE
+
+        }, 2000)
+
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         HelpSecurity.manager!!.addFragment(R.id.options, home as HelpFragment, "home", false)
         tb_im_upload.setOnClickListener {
