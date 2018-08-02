@@ -8,8 +8,8 @@ import android.widget.CheckBox
 import br.com.enzoteles.quickhelp.fragment.HelpFragment
 import br.com.netshoes.Constant
 import br.com.netshoes.R
-import br.com.netshoes.home.di.DaggerHomeComponent
-import br.com.netshoes.home.di.HomeModule
+import br.com.netshoes.details.di.DaggerDetailComponent
+import br.com.netshoes.details.di.DetailModule
 import br.com.netshoes.webservice.allgists.ResponseAllGists
 import br.com.netshoes.webservice.allgists.ResponseAllGistsPO
 import com.squareup.picasso.Picasso

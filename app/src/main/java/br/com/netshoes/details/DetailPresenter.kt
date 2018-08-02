@@ -1,6 +1,7 @@
 package br.com.netshoes.details
 
-import br.com.netshoes.Constant
+import br.com.netshoes.details.di.DaggerDetailComponent
+import br.com.netshoes.details.di.DetailModule
 import br.com.netshoes.webservice.allgists.ResponseAllGistsPO
 import javax.inject.Inject
 

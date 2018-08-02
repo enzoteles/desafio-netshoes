@@ -3,4 +3,5 @@
     <string name="title_home">Home</string>
     <string name="title_favorites">Favorites</string>
     <string name="title_about">About</string>
+    <string name="title_list_favorites">Você não possui nenhum gists\n na lista de favoritos.</string>
 </resources>
