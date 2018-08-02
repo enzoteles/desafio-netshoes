@@ -94,6 +94,7 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
     }
 
     override fun detailGistis(gists: ResponseAllGists?) {
+        Constant.tag_list = "1"
         val args = Bundle()
         args.putSerializable("gists", gists)
         (detail as HelpFragment).arguments = args

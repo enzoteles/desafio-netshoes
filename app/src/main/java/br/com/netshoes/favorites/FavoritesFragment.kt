@@ -15,14 +15,9 @@ import br.com.netshoes.details.DetailMVP
 import br.com.netshoes.favorites.adapter.FavoritesAdapter
 import br.com.netshoes.favorites.di.DaggerFavoritesComponent
 import br.com.netshoes.favorites.di.FavoritesModule
-import br.com.netshoes.home.adapter.HomeAdapter
-import br.com.netshoes.home.di.DaggerHomeComponent
-import br.com.netshoes.home.di.HomeModule
 import br.com.netshoes.main.MainActivity
-import br.com.netshoes.webservice.allgists.ResponseAllGists
 import br.com.netshoes.webservice.allgists.ResponseAllGistsPO
 import kotlinx.android.synthetic.main.favorites.*
-import kotlinx.android.synthetic.main.home.*
 import kotlinx.android.synthetic.main.toolbar.view.*
 import javax.inject.Inject
 
@@ -38,7 +33,8 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
     lateinit var presenter: FavoritesMVP.Presenter
     lateinit var adapter: FavoritesAdapter
     lateinit var layoutManager: LinearLayoutManager
-    //lateinit var detail: DetailMVP.View
+    @Inject
+    lateinit var detail: DetailMVP.View
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val view = inflater!!.inflate(R.layout.favorites, container, false)
@@ -95,11 +91,12 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
 
     }
 
-    /*override fun detailGistis(gists: ResponseAllGistsPO?) {
+    override fun detailGistis(gists: ResponseAllGistsPO?) {
+        Constant.tag_list = "2"
         val args = Bundle()
-        args.putSerializable("gists", gists)
+        args.putSerializable("gistsPO", gists)
         (detail as HelpFragment).arguments = args
         HelpSecurity.manager!!.replaceFragment(R.id.options, detail as HelpFragment, "detail", true);
-    }*/
+    }
 
 }

@@ -30,6 +30,7 @@ class DetailFragment : HelpFragment(), DetailMVP.View {
     @Inject
     lateinit var presenter: DetailMVP.Presenter
     lateinit var gists: ResponseAllGists
+    lateinit var gistsF: ResponseAllGistsPO
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val view = inflater!!.inflate(R.layout.detail, container, false)
@@ -41,7 +42,6 @@ class DetailFragment : HelpFragment(), DetailMVP.View {
         super.onViewCreated(view, savedInstanceState)
         initInjection()
         initView()
-        initData()
     }
 
     override fun initInjection() {
@@ -54,20 +54,43 @@ class DetailFragment : HelpFragment(), DetailMVP.View {
 
     override fun initView() {
         Constant.toolbar!!.ct_tb_tv_title.setText("Detail")
-        val args = arguments
-        gists = args.getSerializable("gists") as ResponseAllGists
 
+        if(Constant.tag_list.equals("1")){
 
-        dt_tv_name_author.setText("${gists.owner!!.login}")
-        dt_tv_gists_language.setText("${gists!!.nodeId}")
-        dt_tv_gists_title.setText("${gists.url}")
-        Picasso.get().load("${gists!!.owner!!.avatarUrl}").into(dt_im_author)
+            val args = arguments
+            gists = args.getSerializable("gists") as ResponseAllGists
 
-        Constant.database!!.gistsDao().allGists().forEach { it ->
-            if (gists.id == it.id && it.isFavorites == true) {
-                dt_cb_favorites.isChecked = true
+            dt_tv_name_author.setText("${gists.owner!!.login}")
+            dt_tv_gists_language.setText("${gists!!.nodeId}")
+            dt_tv_gists_title.setText("${gists.url}")
+            Picasso.get().load("${gists!!.owner!!.avatarUrl}").into(dt_im_author)
+
+            Constant.database!!.gistsDao().allGists().forEach { it ->
+                if (gists.id == it.id && it.isFavorites == true) {
+                    dt_cb_favorites.isChecked = true
+                }
             }
+
+            initData()
+        }else{
+
+            val args = arguments
+            gistsF = args.getSerializable("gistsPO") as ResponseAllGistsPO
+
+            dt_tv_name_author.setText("${gistsF.nameAuthor}")
+            dt_tv_gists_language.setText("${gistsF.languageGists}")
+            dt_tv_gists_title.setText("${gistsF.languageGists}")
+            Picasso.get().load("${gistsF.pathPhoto}").into(dt_im_author)
+
+            Constant.database!!.gistsDao().allGists().forEach { it ->
+                if (gistsF.id == it.id && it.isFavorites == true) {
+                    dt_cb_favorites.isChecked = true
+                }
+            }
+            dt_cb_favorites.isEnabled = false
+            dt_cb_favorites.alpha = 0.8f
         }
+
 
     }
 

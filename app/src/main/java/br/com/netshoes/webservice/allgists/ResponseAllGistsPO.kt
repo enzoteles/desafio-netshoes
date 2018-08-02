@@ -17,4 +17,4 @@ data class ResponseAllGistsPO(
 	val languageGists: String,
 	val isFavorites: Boolean
 
-)
+):Serializable

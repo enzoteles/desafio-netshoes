@@ -1,5 +1,6 @@
 package br.com.netshoes.favorites.di
 
+import br.com.netshoes.details.DetailFragment
 import br.com.netshoes.details.DetailInteractor
 import br.com.netshoes.details.DetailMVP
 import br.com.netshoes.details.DetailPresenter
@@ -27,6 +28,11 @@ class FavoritesModule(var view: FavoritesMVP.View){
     @Provides
     fun provideFavoritesInteractor(): FavoritesMVP.Interactor{
         return FavoritesInteractor(FavoritesPresenter(view))
+    }
+
+    @Provides
+    fun provideDetailFragment(): DetailMVP.View{
+        return DetailFragment()
     }
 
 }

@@ -17,6 +17,7 @@ interface FavoritesMVP{
         fun initView()
         fun initData()
         fun setrecyclerview(listGists: List<ResponseAllGistsPO>?)
+        fun detailGistis(gists: ResponseAllGistsPO?)
     }
 
     interface Presenter {

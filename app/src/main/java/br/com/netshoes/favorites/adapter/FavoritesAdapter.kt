@@ -39,9 +39,9 @@ class FavoritesAdapter(val listGists: List<ResponseAllGistsPO?>?, val context: C
             it.gistsLanguange.setText("${gists!!.languageGists}")
             it.gistsTitle.setText("${gists.titleGists}")
             Picasso.get().load("${gists!!.pathPhoto}").into(it.imgAuthor);
-            /*it.itemView.setOnClickListener {
+            it.itemView.setOnClickListener {
                 view.detailGistis(gists)
-            }*/
+            }
 
         }
 

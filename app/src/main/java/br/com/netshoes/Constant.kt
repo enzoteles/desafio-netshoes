@@ -23,6 +23,7 @@ object Constant{
     var HTTP404 = "HTTP 404 Not Found"
     var NOADDRESS = "Unable to resolve host \"api.github.com\": No address associated with hostname"
     var tag_frag:String?= null
+    var tag_list:String?= null
     var database: AppDataBase?= null
 
 }
