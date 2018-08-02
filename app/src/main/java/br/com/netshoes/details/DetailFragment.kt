@@ -88,7 +88,7 @@ class DetailFragment : HelpFragment(), DetailMVP.View {
                 }
             }
             dt_cb_favorites.isEnabled = false
-            dt_cb_favorites.alpha = 0.8f
+            dt_cb_favorites.alpha = 0.5f
         }
 
 

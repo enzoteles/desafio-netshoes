@@ -8,16 +8,16 @@
     </facet>
     <facet type="android" name="Android">
       <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="netshoesOneDebug" />
-        <option name="ASSEMBLE_TASK_NAME" value="assembleNetshoesOneDebug" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compileNetshoesOneDebugSources" />
+        <option name="SELECTED_BUILD_VARIANT" value="netshoesTwoDebug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleNetshoesTwoDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileNetshoesTwoDebugSources" />
         <afterSyncTasks>
-          <task>generateNetshoesOneDebugSources</task>
+          <task>generateNetshoesTwoDebugSources</task>
         </afterSyncTasks>
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/netshoesOne/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/netshoesTwo/res" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
@@ -25,10 +25,10 @@
       <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
         <compilerSettings />
         <compilerArguments>
-          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/netshoesOneDebug" />
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/netshoesTwoDebug" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
-          <option name="moduleName" value="app_netshoesOneDebug" />
+          <option name="moduleName" value="app_netshoesTwoDebug" />
           <option name="addCompilerBuiltIns" value="true" />
           <option name="loadBuiltInsFromDependencies" value="true" />
           <option name="pluginOptions">
@@ -37,25 +37,10 @@
               <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
               <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
               <option value="plugin:org.jetbrains.kotlin.android:configuration=rO0ABXoAAAEjAAAAAwAIZmVhdHVyZXMAAAABAAV2aWV3cwAHcGFja2FnZQAAAAEAD2JyLmNvbS5uZXRzaG9lcwAHdmFyaWFudAAAAAMAP21haW47L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9tYWluL3JlcwBNbmV0c2hvZXNPbmU7L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9uZXRzaG9lc09uZS9yZXMATW5ldHNob2VzVHdvOy9ob21lL2Vuem90ZWxlcy9Qcm9qZXRvcy9kZXNhZmlvLW5ldHNob2VzL2FwcC9zcmMvbmV0c2hvZXNUd28vcmVz" />
-              <option value="plugin:org.jetbrains.kotlin.android:configuration=rO0ABXoAAAEjAAAAAwAIZmVhdHVyZXMAAAABAAV2aWV3cwAHcGFja2FnZQAAAAEAD2JyLmNvbS5uZXRzaG9lcwAHdmFyaWFudAAAAAMAP21haW47L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9tYWluL3JlcwBNbmV0c2hvZXNPbmU7L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9uZXRzaG9lc09uZS9yZXMATW5ldHNob2VzVHdvOy9ob21lL2Vuem90ZWxlcy9Qcm9qZXRvcy9kZXNhZmlvLW5ldHNob2VzL2FwcC9zcmMvbmV0c2hvZXNUd28vcmVz" />
-              <option value="plugin:org.jetbrains.kotlin.android:configuration=rO0ABXoAAAEjAAAAAwAIZmVhdHVyZXMAAAABAAV2aWV3cwAHcGFja2FnZQAAAAEAD2JyLmNvbS5uZXRzaG9lcwAHdmFyaWFudAAAAAMAP21haW47L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9tYWluL3JlcwBNbmV0c2hvZXNPbmU7L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9uZXRzaG9lc09uZS9yZXMATW5ldHNob2VzVHdvOy9ob21lL2Vuem90ZWxlcy9Qcm9qZXRvcy9kZXNhZmlvLW5ldHNob2VzL2FwcC9zcmMvbmV0c2hvZXNUd28vcmVz" />
-              <option value="plugin:org.jetbrains.kotlin.android:configuration=rO0ABXoAAAEjAAAAAwAIZmVhdHVyZXMAAAABAAV2aWV3cwAHcGFja2FnZQAAAAEAD2JyLmNvbS5uZXRzaG9lcwAHdmFyaWFudAAAAAMAP21haW47L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9tYWluL3JlcwBNbmV0c2hvZXNPbmU7L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9uZXRzaG9lc09uZS9yZXMATW5ldHNob2VzVHdvOy9ob21lL2Vuem90ZWxlcy9Qcm9qZXRvcy9kZXNhZmlvLW5ldHNob2VzL2FwcC9zcmMvbmV0c2hvZXNUd28vcmVz" />
-              <option value="plugin:org.jetbrains.kotlin.android:configuration=rO0ABXoAAAEjAAAAAwAIZmVhdHVyZXMAAAABAAV2aWV3cwAHcGFja2FnZQAAAAEAD2JyLmNvbS5uZXRzaG9lcwAHdmFyaWFudAAAAAMAP21haW47L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9tYWluL3JlcwBNbmV0c2hvZXNPbmU7L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9uZXRzaG9lc09uZS9yZXMATW5ldHNob2VzVHdvOy9ob21lL2Vuem90ZWxlcy9Qcm9qZXRvcy9kZXNhZmlvLW5ldHNob2VzL2FwcC9zcmMvbmV0c2hvZXNUd28vcmVz" />
-              <option value="plugin:org.jetbrains.kotlin.android:configuration=rO0ABXoAAAEjAAAAAwAIZmVhdHVyZXMAAAABAAV2aWV3cwAHcGFja2FnZQAAAAEAD2JyLmNvbS5uZXRzaG9lcwAHdmFyaWFudAAAAAMAP21haW47L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9tYWluL3JlcwBNbmV0c2hvZXNPbmU7L2hvbWUvZW56b3RlbGVzL1Byb2pldG9zL2Rlc2FmaW8tbmV0c2hvZXMvYXBwL3NyYy9uZXRzaG9lc09uZS9yZXMATW5ldHNob2VzVHdvOy9ob21lL2Vuem90ZWxlcy9Qcm9qZXRvcy9kZXNhZmlvLW5ldHNob2VzL2FwcC9zcmMvbmV0c2hvZXNUd28vcmVz" />
             </array>
           </option>
           <option name="pluginClasspaths">
             <array>
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/1755c607e5fabf4ba949ef626c73fc7421d35123/kotlin-android-extensions-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.51/8cd0f527d68195e3c008302744ad319d24499cd7/kotlin-annotation-processing-gradle-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/1755c607e5fabf4ba949ef626c73fc7421d35123/kotlin-android-extensions-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.51/8cd0f527d68195e3c008302744ad319d24499cd7/kotlin-annotation-processing-gradle-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/1755c607e5fabf4ba949ef626c73fc7421d35123/kotlin-android-extensions-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.51/8cd0f527d68195e3c008302744ad319d24499cd7/kotlin-annotation-processing-gradle-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/1755c607e5fabf4ba949ef626c73fc7421d35123/kotlin-android-extensions-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.51/8cd0f527d68195e3c008302744ad319d24499cd7/kotlin-annotation-processing-gradle-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/1755c607e5fabf4ba949ef626c73fc7421d35123/kotlin-android-extensions-1.2.51.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.51/8cd0f527d68195e3c008302744ad319d24499cd7/kotlin-annotation-processing-gradle-1.2.51.jar" />
               <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/1755c607e5fabf4ba949ef626c73fc7421d35123/kotlin-android-extensions-1.2.51.jar" />
               <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.51/8cd0f527d68195e3c008302744ad319d24499cd7/kotlin-annotation-processing-gradle-1.2.51.jar" />
               <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/1755c607e5fabf4ba949ef626c73fc7421d35123/kotlin-android-extensions-1.2.51.jar" />
@@ -67,70 +52,70 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
-    <output url="file://$MODULE_DIR$/build/intermediates/classes/netshoesOne/debug" />
-    <output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/netshoesOne/debug" />
+    <output url="file://$MODULE_DIR$/build/intermediates/classes/netshoesTwo/debug" />
+    <output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/netshoesTwo/debug" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/netshoesOneDebug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/netshoesOne/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/netshoesOne/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/netshoesOne/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/netshoesOne/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/netshoesOne/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/netshoesOne/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/netshoesOne/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOneDebug/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOneDebug/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOneDebug/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOneDebug/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOneDebug/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOneDebug/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOneDebug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/netshoesOneDebugAndroidTest" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/netshoesOne/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/netshoesOne/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/netshoesOne/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/netshoesOne/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/netshoesOne/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/netshoesOne/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/netshoesOne/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOneDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOneDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOneDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOneDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOneDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOneDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOneDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/netshoesOneDebugUnitTest" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/netshoesOne/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOneDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOneDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOneDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOneDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOneDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOneDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOneDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOne/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOne/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOne/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOne/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOne/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOne/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/netshoesOne/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOne/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOne/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOne/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOne/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOne/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOne/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesOne/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOne/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOne/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOne/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOne/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOne/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOne/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesOne/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/netshoesTwoDebug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/netshoesTwo/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/netshoesTwo/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/netshoesTwo/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/netshoesTwo/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/netshoesTwo/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/netshoesTwo/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/netshoesTwo/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwoDebug/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwoDebug/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwoDebug/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwoDebug/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwoDebug/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwoDebug/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwoDebug/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/netshoesTwoDebugAndroidTest" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/netshoesTwo/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/netshoesTwo/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/netshoesTwo/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/netshoesTwo/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/netshoesTwo/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/netshoesTwo/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/netshoesTwo/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwoDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwoDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwoDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwoDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwoDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwoDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwoDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/netshoesTwoDebugUnitTest" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/netshoesTwo/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwoDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwoDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwoDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwoDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwoDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwoDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwoDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwo/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwo/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwo/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwo/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwo/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwo/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/netshoesTwo/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwo/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwo/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwo/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwo/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwo/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwo/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestNetshoesTwo/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwo/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwo/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwo/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwo/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwo/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwo/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testNetshoesTwo/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/assets" type="java-resource" />
