@@ -11,5 +11,6 @@ interface ContentMVP{
     interface View {
         fun initInjection()
         fun initView()
+        fun msgOfConnection()
     }
 }

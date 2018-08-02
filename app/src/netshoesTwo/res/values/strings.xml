@@ -6,4 +6,8 @@
 
     <string name="title_list_favorites">Você não possui nenhum gists\n na lista de favoritos.</string>Lorem ipsum dolor sit amet, vis ipsum epicuri ea, mea id eripuit intellegat contentiones, sed nobis utamur theophrastus cu. Ut timeam persius ocurreret mea, his dolore feugait constituto ut, id dicam equidem detracto his. No est nibh officiis, cu timeam electram cotidieque usu. Id tempor aliquam mel, has ei graeco ornatus appellantur.
     <string name="txt_about">Software aplicativo, ou simplesmente aplicativo ou aplicação, é um programa de computador que tem por objetivo ajudar o seu usuário a desempenhar uma tarefa específica, em geral ligada a processamento de dados.</string>
+
+    <string name="msg_fail_connection">verifique sua conexão. Por favor!!</string>
+    <string name="snack_button">OK</string>
+
 </resources>

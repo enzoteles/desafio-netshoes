@@ -1,8 +1,10 @@
 package br.com.netshoes.content
 
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.support.design.widget.BottomNavigationView
+import android.support.design.widget.Snackbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -51,15 +53,30 @@ class ContentFragment : HelpFragment(), ContentMVP.View {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                HelpSecurity.manager!!.replaceFragment(R.id.options, home as HelpFragment, "home", false)
+                if(Constant.isOnline(activity.baseContext)){
+                    HelpSecurity.manager!!.replaceFragment(R.id.options, home as HelpFragment, "home", false)
+                }else{
+                    msgOfConnection()
+                }
+
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dashboard -> {
-                HelpSecurity.manager!!.replaceFragment(R.id.options, favorites as HelpFragment, "favorites", false)
+                if(Constant.isOnline(activity.baseContext)){
+                    HelpSecurity.manager!!.replaceFragment(R.id.options, favorites as HelpFragment, "favorites", false)
+                }else{
+                    msgOfConnection()
+                }
+
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
-                HelpSecurity.manager!!.replaceFragment(R.id.options, about as HelpFragment , "about", false)
+                if(Constant.isOnline(activity.baseContext)){
+                    HelpSecurity.manager!!.replaceFragment(R.id.options, about as HelpFragment , "about", false)
+                }else{
+                    msgOfConnection()
+                }
+
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -86,6 +103,21 @@ class ContentFragment : HelpFragment(), ContentMVP.View {
         tb_im_upload.setOnClickListener {
             activity.finish()
         }
+    }
+
+    override fun msgOfConnection() {
+
+        // Show a snack bar for undo option
+        Snackbar.make(
+                ll_content_parent, // Parent view
+                getString(R.string.msg_fail_connection), // Message to show
+                Snackbar.LENGTH_LONG //
+        ).setAction( // Set an action for snack bar
+                getString(R.string.snack_button), // Action button text
+                { // Action button click listener
+                    // Do something when undo action button clicked
+                    ll_content_parent.setBackgroundColor(Color.parseColor("#f2f2f2"))
+                }).show() // Finally show the snack bar
     }
 
 }

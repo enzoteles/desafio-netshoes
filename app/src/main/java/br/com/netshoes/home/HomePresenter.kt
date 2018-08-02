@@ -4,6 +4,7 @@ import android.arch.lifecycle.MutableLiveData
 import android.widget.Toast
 import br.com.enzoteles.quickhelp.log.HelpLog
 import br.com.netshoes.Constant
+import br.com.netshoes.R
 import br.com.netshoes.home.di.DaggerHomeComponent
 import br.com.netshoes.home.di.HomeModule
 import br.com.netshoes.webservice.allgists.ResponseAllGists
@@ -37,7 +38,7 @@ class HomePresenter(val view: HomeMVP.View): HomeMVP.Presenter{
         if(message.equals(Constant.HTTP404.trim())){
             Toast.makeText(Constant.context, "${message}", Toast.LENGTH_SHORT).show()
         }else if(message.equals(Constant.NOADDRESS.trim())){
-            Toast.makeText(Constant.context, "${message}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(Constant.context, Constant.activity!!.resources.getString(R.string.msg_fail_connection), Toast.LENGTH_SHORT).show()
         }
     }
 }
