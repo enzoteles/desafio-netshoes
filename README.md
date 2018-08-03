@@ -1,1 +1,24 @@
 # desafio-netshoes
+- Nesse projeto utilizei as seguintes tecnologia
+  - Internacionalização
+  - Flavor (com dois emissores NetshoesOne, NetshoesTwo)
+  - MVP 
+  - Fragments
+  - Single Activity
+  - Picasso
+  - Retrofit
+  - RXJava
+  - Roboletric
+  - JUnit
+  - Mockito
+  - Animation
+  - SnackBar
+  - Custom View
+  - Tratamento de Erros
+  - Injeção de Dependencia (Dagger 2)
+  - Interceptor
+  - Persistencia de Dados (Room)
+  - Assets com Vector
+  - kotlin
+  - android-extencions
+  
