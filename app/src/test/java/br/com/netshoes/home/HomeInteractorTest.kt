@@ -49,6 +49,8 @@ class HomeInteractorTest{
                 ?.observeOn(AndroidSchedulers.mainThread())
                 ?.subscribe ({ response ->
                     setListAllGist(response)
+                }, { e ->
+                    verify(presenter).error(e.message)
                 })
 
     }
@@ -60,7 +62,8 @@ class HomeInteractorTest{
         response.forEach {
             it-> listGists.add(it)
         }
-        assertEquals(listGists[0].owner!!.login, "Enzo")
+        val size = listGists.size
+        `when`(size).thenReturn(30)
     }
 
 }

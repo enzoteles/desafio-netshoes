@@ -107,17 +107,15 @@ class ContentFragment : HelpFragment(), ContentMVP.View {
 
     override fun msgOfConnection() {
 
-        // Show a snack bar for undo option
         Snackbar.make(
-                ll_content_parent, // Parent view
-                getString(R.string.msg_fail_connection), // Message to show
+                ll_content_parent,
+                getString(R.string.msg_fail_connection),
                 Snackbar.LENGTH_LONG //
-        ).setAction( // Set an action for snack bar
-                getString(R.string.snack_button), // Action button text
-                { // Action button click listener
-                    // Do something when undo action button clicked
+        ).setAction(
+                getString(R.string.snack_button),
+                {
                     ll_content_parent.setBackgroundColor(Color.parseColor("#f2f2f2"))
-                }).show() // Finally show the snack bar
+                }).show()
     }
 
 }

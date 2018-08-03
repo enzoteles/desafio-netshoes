@@ -11,16 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d407358a-dd16-405d-a511-d645799d7148" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_almworks_sqlite4java_sqlite4java_0_282_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ibm_icu_icu4j_53_1_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_ant_ant_1_8_0_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_ant_ant_launcher_1_8_0_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_maven_maven_ant_tasks_2_1_3_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_1_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_commons_5_0_1_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_tree_5_0_1_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomePresenterTest.kt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/main/MainActivityTest.kt" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
@@ -32,6 +23,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt" afterPath="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,52 +65,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeInteractor.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomeInteractor.kt">
+      <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/main/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="27" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="-700">
+              <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeInteractorTest.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt">
+      <file leaf-file-name="MainActivityTest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/main/MainActivityTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="182">
+              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding>
-                <element signature="e#30#571#0" expanded="true" />
+                <element signature="e#30#501#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeMVP.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomeMVP.kt">
+      <file leaf-file-name="ContentFragment.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="182">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-              <folding>
-                <marker date="1528118566000" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1528118566000" expanded="false" signature="135:249" ph="..." />
-                <marker date="1528118566000" expanded="false" signature="467:478" ph=" { " />
-                <marker date="1528118566000" expanded="false" signature="497:503" ph=" }" />
-                <marker date="1528118566000" expanded="true" signature="617:1158" ph="{...}" />
-                <marker date="1528118566000" expanded="false" signature="1213:1224" ph=" { " />
-                <marker date="1528118566000" expanded="false" signature="1243:1249" ph=" }" />
-              </folding>
+            <state relative-caret-position="504">
+              <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -434,6 +419,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="bundleNetshoesTwoReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateNetshoesOneReleaseUnitTestConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1148,6 +1137,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateNetshoesTwoReleaseUnitTestConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateNetshoesTwoReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1178,6 +1171,10 @@
                 <option name="description" value="Assembles all Debug builds." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="assembleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateNetshoesOneDebugUnitTestConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1518,6 +1515,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="transformDexArchiveWithDexMergerForNetshoesOneDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateNetshoesTwoDebugUnitTestConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the NetshoesTwoRelease build." />
@@ -1898,6 +1899,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="bundleNetshoesTwoReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateNetshoesOneReleaseUnitTestConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2607,6 +2612,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateNetshoesTwoReleaseUnitTestConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateNetshoesTwoReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -2637,6 +2646,10 @@
                 <option name="description" value="Assembles all Debug builds." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateNetshoesOneDebugUnitTestConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2972,6 +2985,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformDexArchiveWithDexMergerForNetshoesOneDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateNetshoesTwoDebugUnitTestConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the NetshoesTwoRelease build." />
@@ -3643,7 +3660,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/ResponseAllGists.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/AppDataBase.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/Owner.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/Files.kt" />
@@ -3687,13 +3703,14 @@
         <option value="$PROJECT_DIR$/app/src/netshoesOne/res/values-es/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/netshoesTwo/res/values-es/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentMVP.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/ApiRest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomePresenter.kt" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/di/HomeComponent.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomePresenterTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/main/MainActivityTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt" />
       </list>
     </option>
   </component>
@@ -3705,7 +3722,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -3807,7 +3824,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="netshoes" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -3837,11 +3854,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="06ed4d60" />
     <property name="SearchEverywhereHistoryKey" value="Homei&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt&#10;HomePre&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/test/java/br/com/netshoes/home/HomePresenterTest.kt&#10;Cons&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/Constant.kt&#10;Api&#9;null&#9;null&#10;Hom&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;string&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/strings.xml&#10;cont&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;conte&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/content.xml&#10;Conten&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;favor&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/favorites.xml&#10;h&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;abou&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/about.xml&#10;home&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;Deta&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailFragment.kt&#10;det&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/detail.xml&#10;con&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/content.xml&#10;strings.&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/strings.xml&#10;strings.xml&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesOne/res/values/strings.xml&#10;strings&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/values/strings.xml&#10;color&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/colors.xml&#10;sp&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/splash.xml&#10;hom&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;nav&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/menu/navigation.xml&#10;navi&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/menu/navigation.xml&#10;Content&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;colo&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/values/colors.xml&#10;Con&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/content.xml&#10;About&#9;null&#9;null&#10;Favoritesa&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/adapter/FavoritesAdapter.kt&#10;Homem&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/di/HomeModule.kt&#10;FavoritesMo&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt&#10;Fa&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt&#10;Home&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;FavoritesP&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesPresenter.kt&#10;Homef&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;Favoritesp&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesPresenter.kt&#10;Favoritesin&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesInteractor.kt&#10;Favor&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesPresenter.kt&#10;favo&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/favorites.xml&#10;Favoritesi&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesInteractor.kt&#10;Favo&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt&#10;deta&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/detail.xml&#10;DetailF&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailFragment.kt&#10;DetailMo&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailModule.kt&#10;DetailCom&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailComponent.kt&#10;Detail&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/build/tmp/kapt3/stubs/debug/br/com/netshoes/details/DetailComponent.java&#10;DetailPre&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailPresenter.kt&#10;HomeFra&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;In&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailInteractor.kt&#10;DetailIn&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailInteractor.kt" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="br.com.netshoes.main" />
       <recent name="br.com.netshoes.home" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -3881,7 +3899,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.HomeInteractorTest">
+  <component name="RunManager" selected="Android JUnit.MainActivityTest">
     <configuration name="HomeInteractorTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -3932,31 +3950,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="HomePresenterTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="br.com.netshoes.home.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="app" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.com.netshoes.home" />
-      <option name="MAIN_CLASS_NAME" value="br.com.netshoes.home.HomePresenterTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/app" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="HomePresenterTest.getAllGists" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -3970,6 +3963,56 @@
       <option name="PACKAGE_NAME" value="br.com.netshoes.home" />
       <option name="MAIN_CLASS_NAME" value="br.com.netshoes.home.HomePresenterTest" />
       <option name="METHOD_NAME" value="getAllGists" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/app" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MainActivityTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="br.com.netshoes.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="app" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="br.com.netshoes.main" />
+      <option name="MAIN_CLASS_NAME" value="br.com.netshoes.main.MainActivityTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/app" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MainActivityTest.initUILogin" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="br.com.netshoes.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="app" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="br.com.netshoes.main" />
+      <option name="MAIN_CLASS_NAME" value="br.com.netshoes.main.MainActivityTest" />
+      <option name="METHOD_NAME" value="initUILogin" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -4116,19 +4159,21 @@
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Android App.app" />
-      <item index="1" class="java.lang.String" itemvalue="Android JUnit.HomePresenterTest" />
-      <item index="2" class="java.lang.String" itemvalue="Android JUnit.HomePresenterTest.getAllGists" />
-      <item index="3" class="java.lang.String" itemvalue="Android JUnit.HomeInteractorTest" />
-      <item index="4" class="java.lang.String" itemvalue="Android JUnit.HomeInteractorTest.shouldshowAllGists" />
+      <item index="1" class="java.lang.String" itemvalue="Android JUnit.HomePresenterTest.getAllGists" />
+      <item index="2" class="java.lang.String" itemvalue="Android JUnit.HomeInteractorTest" />
+      <item index="3" class="java.lang.String" itemvalue="Android JUnit.HomeInteractorTest.shouldshowAllGists" />
+      <item index="4" class="java.lang.String" itemvalue="Android JUnit.MainActivityTest" />
+      <item index="5" class="java.lang.String" itemvalue="Android JUnit.MainActivityTest.initUILogin" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Android JUnit.HomeInteractorTest" />
-        <item index="1" class="java.lang.String" itemvalue="Android JUnit.HomeInteractorTest.shouldshowAllGists" />
-        <item index="2" class="java.lang.String" itemvalue="Android JUnit.HomePresenterTest.getAllGists" />
-        <item index="3" class="java.lang.String" itemvalue="Android JUnit.HomePresenterTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Android JUnit.MainActivityTest" />
+        <item index="1" class="java.lang.String" itemvalue="Android JUnit.MainActivityTest.initUILogin" />
+        <item index="2" class="java.lang.String" itemvalue="Android JUnit.HomeInteractorTest.shouldshowAllGists" />
+        <item index="3" class="java.lang.String" itemvalue="Android JUnit.HomeInteractorTest" />
+        <item index="4" class="java.lang.String" itemvalue="Android JUnit.HomePresenterTest.getAllGists" />
       </list>
     </recent_temporary>
   </component>
@@ -4149,35 +4194,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomeInteractorTest - 2018.08.02 at 20h 06m 26s.xml">
-      <configuration name="HomeInteractorTest" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 20h 54m 49s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest - 2018.08.02 at 20h 07m 31s.xml">
-      <configuration name="HomeInteractorTest" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 20h 56m 06s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest - 2018.08.02 at 20h 07m 50s.xml">
-      <configuration name="HomeInteractorTest" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 20h 57m 53s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest - 2018.08.02 at 20h 08m 51s.xml">
-      <configuration name="HomeInteractorTest" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 21h 05m 51s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest_shouldshowAllGists - 2018.08.02 at 19h 51m 26s.xml">
-      <configuration name="HomeInteractorTest.shouldshowAllGists" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 21h 09m 26s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest_shouldshowAllGists - 2018.08.02 at 19h 52m 19s.xml">
-      <configuration name="HomeInteractorTest.shouldshowAllGists" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 21h 11m 27s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest_shouldshowAllGists - 2018.08.02 at 19h 52m 53s.xml">
-      <configuration name="HomeInteractorTest.shouldshowAllGists" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 21h 13m 02s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest_shouldshowAllGists - 2018.08.02 at 19h 55m 20s.xml">
-      <configuration name="HomeInteractorTest.shouldshowAllGists" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 21h 13m 41s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest_shouldshowAllGists - 2018.08.02 at 20h 01m 34s.xml">
-      <configuration name="HomeInteractorTest.shouldshowAllGists" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 21h 16m 19s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="HomeInteractorTest_shouldshowAllGists - 2018.08.02 at 20h 07m 21s.xml">
-      <configuration name="HomeInteractorTest.shouldshowAllGists" configurationId="AndroidJUnit" />
+    <history-entry file="MainActivityTest - 2018.08.02 at 21h 17m 32s.xml">
+      <configuration name="MainActivityTest" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -4199,7 +4244,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="167" y="125" width="1099" height="543" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42973855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42973855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.625817" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -4257,27 +4302,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/splash.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/netshoesOne/res/drawable-hdpi/logo_splash.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/netshoesOne/res/drawable-hdpi/logo_about.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -4508,13 +4537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="109" column="8" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentMVP.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -4567,14 +4589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/di/HomeModule.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -4595,24 +4609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomePresenterTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#30#327#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomePresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -4660,18 +4656,68 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomeInteractor.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <caret line="27" column="17" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="27" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="52" column="53" lean-forward="false" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
           <folding>
-            <element signature="e#30#571#0" expanded="true" />
+            <element signature="e#30#571#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomePresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomePresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/main/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-700">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/main/MainActivityTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="e#30#501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
