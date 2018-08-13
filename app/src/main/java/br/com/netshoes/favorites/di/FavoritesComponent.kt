@@ -1,7 +1,5 @@
 package br.com.netshoes.favorites.di
 
-import br.com.netshoes.details.DetailFragment
-import br.com.netshoes.details.DetailPresenter
 import br.com.netshoes.favorites.FavoritesFragment
 import br.com.netshoes.favorites.FavoritesPresenter
 import dagger.Component

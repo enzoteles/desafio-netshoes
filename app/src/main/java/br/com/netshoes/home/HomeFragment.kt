@@ -8,11 +8,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.com.enzoteles.quickhelp.fragment.HelpFragment
+import br.com.enzoteles.quickhelp.log.HelpLog
 import br.com.enzoteles.quickhelp.security.HelpSecurity
 import br.com.netshoes.Constant
 import br.com.netshoes.R
+import br.com.netshoes.details.DetailFragment
 import br.com.netshoes.details.DetailMVP
-import br.com.netshoes.home.adapter.HomeAdapter
 import br.com.netshoes.home.adapter.HomeAdapterBinding
 import br.com.netshoes.main.MainActivity
 import br.com.netshoes.webservice.allgists.ResponseAllGists
@@ -30,8 +31,7 @@ import javax.inject.Inject
 class HomeFragment: HelpFragment(){
 
     lateinit var viewModel: HomeViewModel
-    @Inject
-    lateinit var detail: DetailMVP.View
+    lateinit var detail: DetailFragment
     lateinit var listGists: MutableList<ResponseAllGists>
     lateinit var adapter: HomeAdapterBinding
     lateinit var layoutManager: LinearLayoutManager
@@ -59,7 +59,6 @@ class HomeFragment: HelpFragment(){
     fun initView() {
         Constant.toolbar!!.ct_tb_tv_title.setText("Home")
         Constant.tag_frag = "HOME"
-        //viewModel.initInteractor()
         viewModel = ViewModelProviders.of(activity as MainActivity).get(HomeViewModel::class.java)
         avi.show()
     }
@@ -85,8 +84,7 @@ class HomeFragment: HelpFragment(){
             it-> listGists.add(it)
         }
 
-        //adapter = HomeAdapter(listGists, activity.baseContext)
-        adapter = HomeAdapterBinding(listGists, activity.baseContext)
+        adapter = HomeAdapterBinding(listGists, activity.baseContext, this)
         hm_rv_gists.adapter = adapter
         layoutManager = LinearLayoutManager(activity.baseContext, LinearLayoutManager.VERTICAL, false)
         hm_rv_gists.layoutManager = layoutManager
@@ -96,7 +94,9 @@ class HomeFragment: HelpFragment(){
         Constant.tag_list = "1"
         val args = Bundle()
         args.putSerializable("gists", gists)
+        detail = DetailFragment()
         (detail as HelpFragment).arguments = args
-        HelpSecurity.manager!!.replaceFragment(R.id.options, detail as HelpFragment, "detail", true);
+        HelpSecurity.manager!!.replaceFragment(R.id.options, detail as HelpFragment, "detail", true)
     }
+
 }

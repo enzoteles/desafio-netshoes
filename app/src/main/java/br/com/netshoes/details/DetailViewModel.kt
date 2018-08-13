@@ -1,7 +1,6 @@
 package br.com.netshoes.details
 
-import br.com.netshoes.details.di.DaggerDetailComponent
-import br.com.netshoes.details.di.DetailModule
+import android.arch.lifecycle.ViewModel
 import br.com.netshoes.webservice.allgists.ResponseAllGistsPO
 import javax.inject.Inject
 
@@ -12,24 +11,24 @@ import javax.inject.Inject
  * Software Developer Sr.
  */
 
-class DetailPresenter(var view: DetailMVP.View): DetailMVP.Presenter{
+class DetailViewModel :ViewModel(){
 
     @Inject
     lateinit var interactor: DetailMVP.Interactor
 
-    override fun addGists(gistsPO: ResponseAllGistsPO) {
+    fun addGists(gistsPO: ResponseAllGistsPO) {
         interactor.addGist(gistsPO)
     }
 
-    override fun deleteGists(gistsPO: ResponseAllGistsPO) {
+    fun deleteGists(gistsPO: ResponseAllGistsPO) {
         interactor.deleteGists(gistsPO)
     }
 
-    override fun initInteractor() {
+    /*fun initInteractor() {
         val detailComponent = DaggerDetailComponent.builder()
                 .detailModule(DetailModule(view))
                 .build()
         detailComponent.inject(this)
-    }
+    }*/
 
 }

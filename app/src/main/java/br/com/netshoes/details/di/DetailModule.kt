@@ -1,8 +1,8 @@
 package br.com.netshoes.details.di
 
-import br.com.netshoes.details.DetailInteractor
+import br.com.netshoes.details.DetailRepository
 import br.com.netshoes.details.DetailMVP
-import br.com.netshoes.details.DetailPresenter
+import br.com.netshoes.details.DetailViewModel
 import dagger.Module
 import dagger.Provides
 
@@ -12,18 +12,19 @@ import dagger.Provides
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
+/*
 
 @Module
 class DetailModule(var view: DetailMVP.View){
 
     @Provides
     fun provideDetailPresenter(): DetailMVP.Presenter{
-        return DetailPresenter(view)
+        return DetailViewModel(view)
     }
 
     @Provides
     fun provideDetailInteractor(): DetailMVP.Interactor{
-        return DetailInteractor(DetailPresenter(view))
+        return DetailRepository(DetailViewModel(view))
     }
 
-}
+}*/

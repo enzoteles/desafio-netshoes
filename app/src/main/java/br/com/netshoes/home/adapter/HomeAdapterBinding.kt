@@ -5,14 +5,11 @@ import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import br.com.netshoes.BR
 import br.com.netshoes.R
-import br.com.netshoes.home.HomeMVP
-import kotlinx.android.synthetic.main.item_list_gists.view.*
+import br.com.netshoes.home.HomeFragment
 import br.com.netshoes.webservice.allgists.ResponseAllGists
-import com.squareup.picasso.Picasso
 
 /**
  * Created by Enzo Teles on 30,July,2018
@@ -20,7 +17,7 @@ import com.squareup.picasso.Picasso
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
-class HomeAdapterBinding(val listGists: List<ResponseAllGists?>?, val context: Context) : RecyclerView.Adapter<HomeAdapterBinding.ViewHoder>() {
+class HomeAdapterBinding(val listGists: List<ResponseAllGists?>?, val context: Context, val homeFragment: HomeFragment) : RecyclerView.Adapter<HomeAdapterBinding.ViewHoder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHoder {
 
@@ -28,7 +25,7 @@ class HomeAdapterBinding(val listGists: List<ResponseAllGists?>?, val context: C
         val binding: ViewDataBinding =
                 DataBindingUtil.inflate(layoutInflater, R.layout.item_list_gists, parent, false)
 
-        return ViewHoder(binding)
+        return ViewHoder(binding, homeFragment)
     }
 
     override fun getItemCount(): Int = listGists!!.size
@@ -38,10 +35,11 @@ class HomeAdapterBinding(val listGists: List<ResponseAllGists?>?, val context: C
     }
 
 
-    class ViewHoder(val binding: ViewDataBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHoder(val binding: ViewDataBinding, val homeFragment: HomeFragment) : RecyclerView.ViewHolder(binding.root) {
         fun bind(gists: ResponseAllGists?) {
 
             binding.setVariable(BR.gists, gists)
+            binding.setVariable(BR.homeview, homeFragment)
             binding.executePendingBindings()
         }
     }

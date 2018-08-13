@@ -33,8 +33,8 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
     lateinit var presenter: FavoritesMVP.Presenter
     lateinit var adapter: FavoritesAdapter
     lateinit var layoutManager: LinearLayoutManager
-    @Inject
-    lateinit var detail: DetailMVP.View
+    //@Inject
+    //lateinit var detail: DetailMVP.View
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val view = inflater!!.inflate(R.layout.favorites, container, false)
@@ -87,11 +87,11 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
     }
 
     override fun detailGistis(gists: ResponseAllGistsPO?) {
-        Constant.tag_list = "2"
+        /*Constant.tag_list = "2"
         val args = Bundle()
         args.putSerializable("gistsPO", gists)
         (detail as HelpFragment).arguments = args
-        HelpSecurity.manager!!.replaceFragment(R.id.options, detail as HelpFragment, "detail", true);
+        HelpSecurity.manager!!.replaceFragment(R.id.options, detail as HelpFragment, "detail", true);*/
     }
 
 }

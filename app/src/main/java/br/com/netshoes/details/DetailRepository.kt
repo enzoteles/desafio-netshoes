@@ -10,12 +10,12 @@ import br.com.netshoes.webservice.allgists.ResponseAllGistsPO
  * Software Developer Sr.
  */
 
-class DetailInteractor(var callback: DetailMVP.Presenter) : DetailMVP.Interactor {
-    override fun addGist(gistsPO: ResponseAllGistsPO) {
+class DetailRepository(){
+    fun addGist(gistsPO: ResponseAllGistsPO) {
         Constant.database!!.gistsDao().addGists(gistsPO)
     }
 
-    override fun deleteGists(gistsPO: ResponseAllGistsPO) {
+    fun deleteGists(gistsPO: ResponseAllGistsPO) {
         Constant.database!!.gistsDao().deleteGists(gistsPO)
     }
 

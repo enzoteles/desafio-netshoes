@@ -1,7 +1,7 @@
 package br.com.netshoes.details.di
 
 import br.com.netshoes.details.DetailFragment
-import br.com.netshoes.details.DetailPresenter
+import br.com.netshoes.details.DetailViewModel
 import dagger.Component
 
 /**
@@ -10,8 +10,9 @@ import dagger.Component
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
+/*
 @Component(modules = arrayOf(DetailModule::class))
 interface DetailComponent{
     fun inject(view: DetailFragment)
-    fun inject(presenter: DetailPresenter)
-}
+    fun inject(viewModel: DetailViewModel)
+}*/
