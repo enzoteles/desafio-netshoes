@@ -1,12 +1,9 @@
 package br.com.netshoes.home
 
-import br.com.netshoes.home.di.DaggerHomeComponent
-import br.com.netshoes.home.di.HomeModule
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.runners.MockitoJUnitRunner
 
@@ -25,7 +22,7 @@ class HomePresenterTest{
 
     @Before
     fun setUp(){
-        presenter = HomePresenter(view)
+        presenter = HomeViewModel(view)
     }
 
     @Test

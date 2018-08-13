@@ -3,7 +3,6 @@ package br.com.netshoes.favorites
 import android.arch.lifecycle.MutableLiveData
 import br.com.netshoes.favorites.di.DaggerFavoritesComponent
 import br.com.netshoes.favorites.di.FavoritesModule
-import br.com.netshoes.home.di.DaggerHomeComponent
 import br.com.netshoes.webservice.allgists.ResponseAllGistsPO
 import javax.inject.Inject
 

@@ -2,6 +2,7 @@ package br.com.netshoes.webservice.allgists
 
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
+import android.databinding.BaseObservable
 import javax.annotation.Generated
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
@@ -65,4 +66,4 @@ data class ResponseAllGists(
 
 	val isFavorites: Boolean? = null
 
-): Serializable
+): Serializable, BaseObservable()

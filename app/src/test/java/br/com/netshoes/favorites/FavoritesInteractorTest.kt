@@ -1,11 +1,7 @@
 package br.com.netshoes.favorites
 
 import br.com.netshoes.Constant
-import br.com.netshoes.home.HomeInteractor
-import br.com.netshoes.home.HomeMVP
-import br.com.netshoes.webservice.AllGistsApi
 import io.reactivex.android.plugins.RxAndroidPlugins
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.plugins.RxJavaPlugins
 import io.reactivex.schedulers.Schedulers
 import org.junit.Assert.*
@@ -13,7 +9,6 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
-import org.mockito.Mockito
 import org.mockito.runners.MockitoJUnitRunner
 
 /**

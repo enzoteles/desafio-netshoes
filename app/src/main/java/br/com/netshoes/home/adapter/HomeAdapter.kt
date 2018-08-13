@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
-class HomeAdapter(val listGists: List<ResponseAllGists?>?, val context: Context, val view: HomeMVP.View) : RecyclerView.Adapter<HomeAdapter.ViewHoder>() {
+class HomeAdapter(val listGists: List<ResponseAllGists?>?, val context: Context) : RecyclerView.Adapter<HomeAdapter.ViewHoder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHoder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_list_gists, parent, false)
@@ -38,7 +38,7 @@ class HomeAdapter(val listGists: List<ResponseAllGists?>?, val context: Context,
             it.gistsTitle.setText("${gists.url}")
             Picasso.get().load("${gists!!.owner!!.avatarUrl}").into(it.imgAuthor);
             it.itemView.setOnClickListener {
-                view.detailGistis(gists)
+                //view.detailGistis(gists)
             }
 
         }

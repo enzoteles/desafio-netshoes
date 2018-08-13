@@ -2,9 +2,9 @@ package br.com.netshoes.home.di
 
 import br.com.netshoes.details.DetailFragment
 import br.com.netshoes.details.DetailMVP
-import br.com.netshoes.home.HomeInteractor
+import br.com.netshoes.home.HomeRepository
 import br.com.netshoes.home.HomeMVP
-import br.com.netshoes.home.HomePresenter
+import br.com.netshoes.home.HomeViewModel
 import dagger.Module
 import dagger.Provides
 
@@ -15,17 +15,18 @@ import dagger.Provides
  * Software Developer Sr.
  */
 
+/*
 @Module
 class HomeModule(var view: HomeMVP.View){
 
     @Provides
     fun provideHomePresenter(): HomeMVP.Presenter{
-        return  HomePresenter(view)
+        return  HomeViewModel(view)
     }
 
     @Provides
     fun provideHomeInteractor(): HomeMVP.Interactor{
-        return HomeInteractor(HomePresenter(view))
+        return HomeRepository(HomeViewModel(view))
     }
 
     @Provides
@@ -34,4 +35,4 @@ class HomeModule(var view: HomeMVP.View){
     }
 
 
-}
+}*/

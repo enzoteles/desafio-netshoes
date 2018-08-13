@@ -22,10 +22,10 @@ class ContentModule(){
      * method that provides the instance of the home screem
      * @return
      * */
-    @Provides
+    /*@Provides
     fun provideHomeFragment(): HomeMVP.View{
         return  HomeFragment()
-    }
+    }*/
 
 
     /**

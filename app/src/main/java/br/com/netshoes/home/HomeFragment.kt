@@ -1,21 +1,19 @@
 package br.com.netshoes.home
 
 import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.com.enzoteles.quickhelp.fragment.HelpFragment
-import br.com.enzoteles.quickhelp.log.HelpLog
 import br.com.enzoteles.quickhelp.security.HelpSecurity
 import br.com.netshoes.Constant
 import br.com.netshoes.R
-import br.com.netshoes.details.DetailFragment
 import br.com.netshoes.details.DetailMVP
 import br.com.netshoes.home.adapter.HomeAdapter
-import br.com.netshoes.home.di.DaggerHomeComponent
-import br.com.netshoes.home.di.HomeModule
+import br.com.netshoes.home.adapter.HomeAdapterBinding
 import br.com.netshoes.main.MainActivity
 import br.com.netshoes.webservice.allgists.ResponseAllGists
 import kotlinx.android.synthetic.main.home.*
@@ -29,14 +27,13 @@ import javax.inject.Inject
  * Software Developer Sr.
  */
 
-class HomeFragment: HelpFragment(), HomeMVP.View{
+class HomeFragment: HelpFragment(){
 
-    @Inject
-    lateinit var presenter: HomeMVP.Presenter
+    lateinit var viewModel: HomeViewModel
     @Inject
     lateinit var detail: DetailMVP.View
     lateinit var listGists: MutableList<ResponseAllGists>
-    lateinit var adapter: HomeAdapter
+    lateinit var adapter: HomeAdapterBinding
     lateinit var layoutManager: LinearLayoutManager
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
@@ -46,30 +43,31 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initInjection()
+        //initInjection()
         initView()
         initData()
     }
 
-    override fun initInjection() {
+    fun initInjection() {
 
-        val homeComponent = DaggerHomeComponent.builder()
+        /*val homeComponent = DaggerHomeComponent.builder()
                 .homeModule(HomeModule(this))
                 .build()
-        homeComponent.inject(this)
+        homeComponent.inject(this)*/
     }
 
-    override fun initView() {
+    fun initView() {
         Constant.toolbar!!.ct_tb_tv_title.setText("Home")
         Constant.tag_frag = "HOME"
-        presenter.initInteractor()
+        //viewModel.initInteractor()
+        viewModel = ViewModelProviders.of(activity as MainActivity).get(HomeViewModel::class.java)
         avi.show()
     }
 
 
-    override fun initData() {
+    fun initData() {
 
-        presenter.getAllGists().observe(activity as MainActivity, object : Observer<List<ResponseAllGists>>{
+        viewModel.getAllGists().observe(activity as MainActivity, object : Observer<List<ResponseAllGists>>{
             override fun onChanged(response: List<ResponseAllGists>?) {
                 setrecyclerview(response)
             }
@@ -78,7 +76,7 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
 
     }
 
-    override fun setrecyclerview(gits: List<ResponseAllGists>?) {
+    fun setrecyclerview(gits: List<ResponseAllGists>?) {
         avi.hide()
         hm_rv_gists.visibility = View.VISIBLE
         listGists = arrayListOf()
@@ -87,13 +85,14 @@ class HomeFragment: HelpFragment(), HomeMVP.View{
             it-> listGists.add(it)
         }
 
-        adapter = HomeAdapter(listGists, activity.baseContext, this)
+        //adapter = HomeAdapter(listGists, activity.baseContext)
+        adapter = HomeAdapterBinding(listGists, activity.baseContext)
         hm_rv_gists.adapter = adapter
         layoutManager = LinearLayoutManager(activity.baseContext, LinearLayoutManager.VERTICAL, false)
         hm_rv_gists.layoutManager = layoutManager
     }
 
-    override fun detailGistis(gists: ResponseAllGists?) {
+    fun detailGistis(gists: ResponseAllGists?) {
         Constant.tag_list = "1"
         val args = Bundle()
         args.putSerializable("gists", gists)

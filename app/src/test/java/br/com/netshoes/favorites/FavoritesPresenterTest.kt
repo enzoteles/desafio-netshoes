@@ -1,7 +1,5 @@
 package br.com.netshoes.favorites
 
-import br.com.netshoes.home.HomeMVP
-import br.com.netshoes.home.HomePresenter
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test

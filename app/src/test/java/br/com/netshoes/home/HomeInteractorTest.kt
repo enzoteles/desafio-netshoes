@@ -32,7 +32,7 @@ class HomeInteractorTest{
 
     @Before
     fun setUp(){
-        interactor = HomeInteractor(presenter)
+        interactor = HomeRepository(presenter)
         RxAndroidPlugins.setInitMainThreadSchedulerHandler { h -> Schedulers.trampoline() }
         RxJavaPlugins.setIoSchedulerHandler { h -> Schedulers.trampoline() }
     }
