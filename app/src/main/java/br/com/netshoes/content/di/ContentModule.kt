@@ -33,11 +33,11 @@ class ContentModule(){
      * @return
      * */
 
-    @Provides
+    /*@Provides
     fun provideFavoritesFragment(): FavoritesMVP.View{
         return  FavoritesFragment()
     }
-
+*/
 
     /**
      * method that provides the instance of the about screem

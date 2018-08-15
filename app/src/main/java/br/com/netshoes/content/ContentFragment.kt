@@ -15,9 +15,8 @@ import br.com.netshoes.R
 import br.com.netshoes.about.AboutMVP
 import br.com.netshoes.content.di.ContentModule
 import br.com.netshoes.content.di.DaggerContentComponent
-import br.com.netshoes.favorites.FavoritesMVP
+import br.com.netshoes.favorites.FavoritesFragment
 import br.com.netshoes.home.HomeFragment
-import br.com.netshoes.home.HomeMVP
 import kotlinx.android.synthetic.main.content.*
 import kotlinx.android.synthetic.main.toolbar.*
 import javax.inject.Inject
@@ -32,8 +31,8 @@ class ContentFragment : HelpFragment(), ContentMVP.View {
 
     //@Inject
     var home: HomeFragment = HomeFragment()
-    @Inject
-    lateinit var favorites: FavoritesMVP.View
+    //@Inject
+    var favorites: FavoritesFragment = FavoritesFragment()
     @Inject
     lateinit var about: AboutMVP.View
 
@@ -64,7 +63,7 @@ class ContentFragment : HelpFragment(), ContentMVP.View {
             }
             R.id.navigation_dashboard -> {
                 if(Constant.isOnline(activity.baseContext)){
-                    HelpSecurity.manager!!.replaceFragment(R.id.options, favorites as HelpFragment, "favorites", false)
+                    HelpSecurity.manager!!.replaceFragment(R.id.options, favorites, "favorites", false)
                 }else{
                     msgOfConnection()
                 }

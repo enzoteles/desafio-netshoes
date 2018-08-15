@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="gistsPO"
+            type="br.com.netshoes.webservice.allgists.ResponseAllGistsPO" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" tools:context=".main.MainActivity"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_weight="5" android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1.5" android:orientation="vertical"
+                tools:ignore="Suspicious0dp">
+
+                <ImageView
+                    android:id="@+id/hm_author_avatar" android:layout_width="wrap_content"
+                    android:layout_height="80dp" android:layout_gravity="center"
+                    android:layout_marginBottom="10dp" android:layout_marginTop="10dp"
+                    android:src="@{gistsPO.pathPhoto}" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp" android:layout_height="107dp"
+                android:layout_weight="3.5" android:orientation="vertical"
+                tools:ignore="Suspicious0dp">
+
+
+                <TextView
+                    android:id="@+id/hm_author_name" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                    android:singleLine="true" android:text="@{gistsPO.titleGists}" />
+
+                <TextView
+                    android:id="@+id/hm_gists_name" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                    android:singleLine="true" android:text="@{gistsPO.languageGists}" />
+
+                <TextView
+                    android:id="@+id/hm_gists_languange" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                    android:singleLine="true" android:text="@{gistsPO.nameAuthor}" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent" android:layout_height="0.5dp"
+            android:background="@android:color/background_dark" />
+
+    </LinearLayout>
+</layout>

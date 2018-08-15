@@ -1,20 +1,16 @@
 package br.com.netshoes.favorites
 
 import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.com.enzoteles.quickhelp.fragment.HelpFragment
-import br.com.enzoteles.quickhelp.log.HelpLog
-import br.com.enzoteles.quickhelp.security.HelpSecurity
 import br.com.netshoes.Constant
 import br.com.netshoes.R
-import br.com.netshoes.details.DetailMVP
 import br.com.netshoes.favorites.adapter.FavoritesAdapter
-import br.com.netshoes.favorites.di.DaggerFavoritesComponent
-import br.com.netshoes.favorites.di.FavoritesModule
 import br.com.netshoes.main.MainActivity
 import br.com.netshoes.webservice.allgists.ResponseAllGistsPO
 import kotlinx.android.synthetic.main.favorites.*
@@ -27,10 +23,10 @@ import javax.inject.Inject
  * email: enzo.carvalho.teles@gmail.com
  * Software Developer Sr.
  */
-class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
+class FavoritesFragment: HelpFragment(){
 
     @Inject
-    lateinit var presenter: FavoritesMVP.Presenter
+    lateinit var viewModel: FavoritesViewModel
     lateinit var adapter: FavoritesAdapter
     lateinit var layoutManager: LinearLayoutManager
     //@Inject
@@ -44,21 +40,22 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Constant.toolbar!!.ct_tb_tv_title.setText("Favorites")
-        initInjection()
+        //initInjection()
         initData()
 
     }
 
-    override fun initInjection() {
+    /*fun initInjection() {
         val favoritesComponent = DaggerFavoritesComponent.builder()
                 .favoritesModule(FavoritesModule(this))
                 .build()
         favoritesComponent.inject(this)
-        presenter.initInteractor()
-    }
+        viewModel.initInteractor()
+    }*/
 
-    override fun initData() {
-        presenter.loadAllListFavorites().observe(activity as MainActivity, object : Observer<List<ResponseAllGistsPO>> {
+    fun initData() {
+        viewModel = ViewModelProviders.of(activity as MainActivity).get(FavoritesViewModel::class.java)
+        viewModel.loadAllListFavorites().observe(activity as MainActivity, object : Observer<List<ResponseAllGistsPO>> {
             override fun onChanged(response: List<ResponseAllGistsPO>?) {
                 setrecyclerview(response)
             }
@@ -66,7 +63,7 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
         })
     }
 
-    override fun setrecyclerview(listGists: List<ResponseAllGistsPO>?) {
+    fun setrecyclerview(listGists: List<ResponseAllGistsPO>?) {
 
         if (listGists!!.size > 0){
 
@@ -86,7 +83,7 @@ class FavoritesFragment: HelpFragment(), FavoritesMVP.View{
 
     }
 
-    override fun detailGistis(gists: ResponseAllGistsPO?) {
+    fun detailGistis(gists: ResponseAllGistsPO?) {
         /*Constant.tag_list = "2"
         val args = Bundle()
         args.putSerializable("gistsPO", gists)

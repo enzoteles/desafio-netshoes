@@ -14,5 +14,5 @@ import dagger.Component
 @Component(modules = arrayOf(HomeModule::class))
 interface HomeComponent{
     fun inject(view: HomeFragment)
-    fun inject(presenter: HomeViewModel)
+    fun inject(viewModel: HomeViewModel)
 }*/

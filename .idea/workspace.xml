@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d407358a-dd16-405d-a511-d645799d7148" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_list_gists_po.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
@@ -18,19 +19,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailFragment.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailInteractor.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailRepository.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailPresenter.kt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/di/DetailComponent.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/di/DetailComponent.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/di/DetailModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/di/DetailModule.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/di/ContentModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/di/ContentModule.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesInteractor.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesRepository.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesPresenter.kt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/adapter/FavoritesAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/adapter/FavoritesAdapter.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesComponent.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesComponent.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomeFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomeFragment.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapterBinding.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapterBinding.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/detail.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_list_gists.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_list_gists.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/di/HomeComponent.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/di/HomeComponent.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/ResponseAllGistsPO.kt" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/ResponseAllGistsPO.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesInteractorTest.kt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesPresenterTest.kt" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,84 +71,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DetailFragment.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetailModule.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/di/DetailModule.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="29" column="1" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetailComponent.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/di/DetailComponent.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="17" column="1" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoritesModule.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoritesFragment.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FavoritesFragment.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            <state relative-caret-position="-308">
+              <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FavoritesComponent.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesComponent.kt">
+      <file leaf-file-name="FavoritesAdapter.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/adapter/FavoritesAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="124">
+              <caret line="28" column="97" lean-forward="false" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/detail.xml">
+      <file leaf-file-name="item_list_gists_po.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_list_gists_po.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="51" column="88" lean-forward="false" selection-start-line="51" selection-start-column="88" selection-end-line="51" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FavoritesViewModel.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesViewModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+            <state relative-caret-position="306">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DetailRepository.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailRepository.kt">
+      <file leaf-file-name="ResponseAllGistsPO.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/ResponseAllGistsPO.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="162">
+              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeAdapterBinding.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapterBinding.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -172,6 +152,8 @@
       <find>testCompile</find>
       <find>home</find>
       <find>presenter</find>
+      <find>favorites</find>
+      <find>viewModel</find>
     </findStrings>
     <replaceStrings>
       <replace>testImplementation</replace>
@@ -3842,12 +3824,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/netshoesOne/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/selector_favorite.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/about.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/favorites.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/Constant.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" />
@@ -3865,7 +3841,6 @@
         <option value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/main/MainActivityTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesPresenterTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesInteractorTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesInteractor.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/netshoes/home/HomeFragmentTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/MyTestRunner.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomeFragmentTest.kt" />
@@ -3874,9 +3849,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/di/HomeModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/di/HomeComponent.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesPresenter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/di/ContentModule.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/ResponseAllGists.kt" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_list_gists.xml" />
@@ -3890,9 +3862,19 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/di/DetailModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/di/DetailComponent.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesInteractor.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesRepository.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesComponent.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/di/ContentModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/ResponseAllGistsPO.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/adapter/FavoritesAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_list_gists_po.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesPresenter.kt" />
       </list>
     </option>
   </component>
@@ -3918,6 +3900,47 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="netshoes" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="netshoes" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="favorites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3974,51 +3997,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="netshoes" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="netshoes" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="details" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="netshoes" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="favorites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="desafio-netshoes" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="netshoes" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -4063,7 +4042,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="06ed4d60" />
-    <property name="SearchEverywhereHistoryKey" value="Favoritesf&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt&#10;item&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/item_list_gists.xml&#10;Detailp&#9;null&#9;null&#10;Homevi&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeViewModel.kt&#10;And&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/AndroidManifest.xml&#10;Homef&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;Home&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapter.kt&#10;Conte&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;COnte&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;Mainmo&#9;null&#9;null&#10;Main&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/main/MainActivity.kt&#10;app&#9;RUN_CONFIGURATION&#9;app&#10;string&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/strings.xml&#10;home.&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;AboutF&#9;null&#9;null&#10;Favori&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesInteractor.kt&#10;HomeIN&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt&#10;FavoritesI&#9;null&#9;null&#10;FavoritesPre&#9;null&#9;null&#10;Conten&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;Homei&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt&#10;HomePre&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/test/java/br/com/netshoes/home/HomePresenterTest.kt&#10;Cons&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/Constant.kt&#10;Api&#9;null&#9;null&#10;Hom&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;cont&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;conte&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/content.xml&#10;favor&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/favorites.xml&#10;h&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;abou&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/about.xml&#10;home&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;Deta&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailFragment.kt&#10;det&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/detail.xml&#10;con&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/content.xml&#10;strings.&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/strings.xml&#10;strings.xml&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesOne/res/values/strings.xml&#10;strings&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/values/strings.xml&#10;color&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/colors.xml&#10;sp&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/splash.xml&#10;hom&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;nav&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/menu/navigation.xml&#10;navi&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/menu/navigation.xml&#10;Content&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;colo&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/values/colors.xml&#10;Con&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/content.xml&#10;About&#9;null&#9;null&#10;Favoritesa&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/adapter/FavoritesAdapter.kt&#10;Homem&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/di/HomeModule.kt&#10;FavoritesMo&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt&#10;Fa&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt" />
+    <property name="SearchEverywhereHistoryKey" value="Respo&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/webservice/allgists/ResponseAllGistsPO.kt&#10;HomeA&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapterBinding.kt&#10;Homead&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapterBinding.kt&#10;ContentF&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;FavoritesRep&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesRepository.kt&#10;Favoritesvi&#9;null&#9;null&#10;Content&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;HomeFra&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;Favoritesf&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt&#10;item&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/item_list_gists.xml&#10;Detailp&#9;null&#9;null&#10;Homevi&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeViewModel.kt&#10;And&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/AndroidManifest.xml&#10;Homef&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;Home&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapter.kt&#10;Conte&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;COnte&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;Mainmo&#9;null&#9;null&#10;Main&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/main/MainActivity.kt&#10;app&#9;RUN_CONFIGURATION&#9;app&#10;string&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/strings.xml&#10;home.&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;AboutF&#9;null&#9;null&#10;Favori&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/favorites/FavoritesInteractor.kt&#10;HomeIN&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt&#10;FavoritesI&#9;null&#9;null&#10;FavoritesPre&#9;null&#9;null&#10;Conten&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;Homei&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt&#10;HomePre&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/test/java/br/com/netshoes/home/HomePresenterTest.kt&#10;Cons&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/Constant.kt&#10;Api&#9;null&#9;null&#10;Hom&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/home/HomeFragment.kt&#10;cont&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/content/ContentFragment.kt&#10;conte&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/content.xml&#10;favor&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/favorites.xml&#10;h&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;abou&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/about.xml&#10;home&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;Deta&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/java/br/com/netshoes/details/DetailFragment.kt&#10;det&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/detail.xml&#10;con&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/content.xml&#10;strings.&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/strings.xml&#10;strings.xml&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesOne/res/values/strings.xml&#10;strings&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/values/strings.xml&#10;color&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/netshoesTwo/res/values/colors.xml&#10;sp&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/splash.xml&#10;hom&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/layout/home.xml&#10;nav&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/menu/navigation.xml&#10;navi&#9;FILE&#9;file:///home/enzoteles/Projetos/desafio-netshoes/app/src/main/res/menu/navigation.xml" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
@@ -4091,11 +4070,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/netshoesTwo/res" />
       <recent name="$PROJECT_DIR$/app/src/netshoesOne/res" />
       <recent name="$PROJECT_DIR$/app/src/main/res/values-es" />
       <recent name="$PROJECT_DIR$/app/src/main/res/values-en" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-nodpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -4448,7 +4427,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5588235" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51797384" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -4456,23 +4435,47 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="167" y="125" width="1099" height="543" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6013072" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.625817" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753392" sideWeight="0.36437908" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2753392" sideWeight="0.6356209" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7794118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5588235" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51797384" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57679737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.625817" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2753392" sideWeight="0.36437908" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4520,79 +4523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/AllGistsApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.10.19/8269667b73d9616600359a9b0ba1b1c7d0cf7a97/mockito-core-1.10.19-sources.jar!/org/mockito/Mockito.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="1521" column="41" lean-forward="false" selection-start-line="1521" selection-start-column="41" selection-end-line="1521" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomeMVP.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomePresenterTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="33" column="5" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesPresenterTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/home/HomeInteractorTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="55" column="5" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="55" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesInteractorTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesInteractor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/about/AboutFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/netshoes/ExampleInstrumentedTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -4602,14 +4532,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/netshoes/home/HomeFragmentTest.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="43" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/netshoesTwo/res/values/strings.xml">
@@ -4620,14 +4550,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robolectric/robolectric/3.8/fbceb80712b75f805ba1fb78120fa8e4285dc556/robolectric-3.8-sources.jar!/org/robolectric/Robolectric.java">
@@ -4695,7 +4625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4703,15 +4632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="18" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4727,23 +4647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/di/ContentModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4751,7 +4654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="129" column="70" lean-forward="false" selection-start-line="129" selection-start-column="70" selection-end-line="129" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4787,14 +4689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapterBinding.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="41" column="57" lean-forward="false" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -4810,7 +4704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4822,38 +4715,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomeFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_list_gists.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <marker date="1534294944829" expanded="true" signature="3874:3882" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4861,7 +4736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="29" column="1" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4873,38 +4747,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/netshoesOneDebug/br/com/netshoes/favorites/di/FavoritesComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesComponent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/netshoesOneDebug/br/com/netshoes/favorites/di/FavoritesComponent.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/details/DetailViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -4914,12 +4757,175 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/detail.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
           <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/favorites.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/HomeFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="55" column="36" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="66" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesComponent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/di/FavoritesModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/di/ContentModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="39" column="2" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="39" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/content/ContentFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_list_gists.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesViewModelTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesPresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/br/com/netshoes/favorites/FavoritesRepositoryTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/netshoesOne/debug/br/com/netshoes/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#762856#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/home/adapter/HomeAdapterBinding.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/adapter/FavoritesAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="28" column="97" lean-forward="false" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/webservice/allgists/ResponseAllGistsPO.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_list_gists_po.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="51" column="88" lean-forward="false" selection-start-line="51" selection-start-column="88" selection-end-line="51" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="7" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/netshoes/favorites/FavoritesFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="23" />
           <folding />
         </state>
       </provider>

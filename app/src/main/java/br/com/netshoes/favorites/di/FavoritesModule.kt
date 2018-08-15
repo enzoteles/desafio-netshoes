@@ -1,13 +1,5 @@
 package br.com.netshoes.favorites.di
 
-import br.com.netshoes.details.DetailFragment
-import br.com.netshoes.details.DetailMVP
-import br.com.netshoes.favorites.FavoritesInteractor
-import br.com.netshoes.favorites.FavoritesMVP
-import br.com.netshoes.favorites.FavoritesPresenter
-import dagger.Module
-import dagger.Provides
-
 /**
  * Created by Enzo Teles on 30,July,2018
  * Barueri - SP
@@ -15,6 +7,7 @@ import dagger.Provides
  * Software Developer Sr.
  */
 
+/*
 @Module
 class FavoritesModule(var view: FavoritesMVP.View){
 
@@ -25,12 +18,14 @@ class FavoritesModule(var view: FavoritesMVP.View){
 
     @Provides
     fun provideFavoritesInteractor(): FavoritesMVP.Interactor{
-        return FavoritesInteractor(FavoritesPresenter(view))
+        return FavoritesRepository(FavoritesPresenter(view))
     }
 
-    /*@Provides
+    */
+/*@Provides
     fun provideDetailFragment(): DetailMVP.View{
         return DetailFragment()
-    }*/
+    }*//*
 
-}
+
+}*/
